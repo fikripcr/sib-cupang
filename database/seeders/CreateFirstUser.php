@@ -16,12 +16,5 @@ class CreateFirstUser extends Seeder
         $data['email']    = 'gatot@pcr.ac.id';
         $data['password'] = Hash::make('gatotkaca');
         User::create($data);
-    
-
-        // User::create([
-        //     'name'     => 'Admin',
-        //     'email'    => 'gatot@pcr.ac.id',
-        //     'password' => Hash::make('gatotkaca'),
-        // ]);
     }
 }
