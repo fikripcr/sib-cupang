@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\QuestionController;
@@ -47,3 +48,6 @@ Route::get('dashboard', [DashboardController::class, 'index'])
 Route::resource('pelanggan', PelangganController::class);
 
 Route::resource('user', UserController::class);
+
+Route::get('auth',[AuthController::class,'index'])->name('auth');
+Route::post('auth/login',[AuthController::class,'login'])->name('auth.login');
