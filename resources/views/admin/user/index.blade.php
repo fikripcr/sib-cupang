@@ -53,6 +53,7 @@
                                     <th class="border-0">Nama Lengkap</th>
                                     <th class="border-0">Email</th>
                                     <th class="border-0">Password</th>
+                                    <th class="border-0">Role</th>
                                     <th class="border-0 rounded-end">Action</th>
                                 </tr>
                             </thead>
@@ -72,7 +73,7 @@
                                         <td>{{ $item->name }}</td>
                                         <td>{{ $item->email }}</td>
                                         <td>{{ $item->password }}</td>
-
+                                        <td>{{ $item->role }}</td>
                                         <td>
                                             <a href="{{ route('user.edit', $item->id) }}" class="btn btn-info btn-sm">
                                                 <svg class="icon icon-xs me-2" data-slot="icon" fill="none"
